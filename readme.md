@@ -2,6 +2,11 @@
 
 This is a simple example of how to deploy a static website to Azure Web App using Pulumi.
 
+```bash
+# Select stack from Pulumi Cloud
+pulumi stack select Jalalhejazi/azure-website-test/dev
+pulumi up
+```
 
 ![](./images/deploy.png)
 
