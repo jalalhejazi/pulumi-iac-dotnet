@@ -1,6 +1,2 @@
 config:
   azure-native:location: westeurope
-  azure-website-test:errorDocument: error.html
-  azure-website-test:indexDocument: index.html
-  azure-website-test:path: ./www
-  pulumi:template: static-website-azure-csharp

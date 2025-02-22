@@ -16,16 +16,8 @@ return await Deployment.RunAsync(() =>
     // Create a resource group for the website.
     // add tags to resource group
 
-    var resourceGroup = new AzureNative.Resources.ResourceGroup("resource-group", new()
-    {
-        ResourceGroupName = "website-rg",
-        Tags = {
-            { "environment", "dev" },
-            { "project", "website" },
-        },
-         
-    });
-    
+    var resourceGroup = new AzureNative.Resources.ResourceGroup("resource-group");
+
 
     // Create a blob storage account.
     var account = new AzureNative.Storage.StorageAccount("account", new()
